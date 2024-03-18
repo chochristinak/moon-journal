@@ -1,0 +1,47 @@
+<%- include('../partials/header') %>
+<%= title %>
+<img id="index-phase"src="https://totemsurftribe.files.wordpress.com/2024/03/pngaaa.com-1343387.png">
+
+  <table id="list">
+    <thead>
+      <tr>
+        <th>Goal</th>
+        <th>Purpose</th>
+        <th>Lunar Phase</th>
+        <th>Journaling</th>
+        <th>Complete?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% goals.forEach(function(goal) { %>
+        <tr>
+          <td>
+            <%= goal.goal %>
+          </td>
+          <td>
+            <%= goal.setIntentions %>
+          </td>
+          <td>
+            <%= phase %>
+            <%= phaseEmoji %>
+          </td>
+          <td><a href="/goals/<%= goal._id %>">RE-VISIT</a></td>
+          <td><a href="???">DONE</a></td></label>
+          </td>
+          
+          <badge container
+        </tr>
+
+        <% }); %>
+    </tbody>
+  </table>
+
+  <table id="list">
+    <thead>
+      <tr>
+        <th>Growth</th>
+      </tr>
+    </thead>
+    <tbody>
+
+  <%- include('../partials/footer') %>
