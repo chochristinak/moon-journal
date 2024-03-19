@@ -15,5 +15,9 @@ router.get('/new', ensureLoggedIn, goalsCtrl.new);
 router.get('/:id', ensureLoggedIn, goalsCtrl.show);
 // POST /goals
 router.post('/', ensureLoggedIn, goalsCtrl.create);
+
+router.get('/:id/edit', ensureLoggedIn, goalsCtrl.edit)
+
+router.put('/:id', ensureLoggedIn, goalsCtrl.update)
 	
 module.exports = router;

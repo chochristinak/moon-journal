@@ -1,116 +1,103 @@
 <%- include('../partials/header') %>
-  <section id="show-page">
+  <img id="goals-show-img"
+    src="https://totemsurftribe.files.wordpress.com/2024/03/e28094pngtreee28094moon-phase-geometric-black-figure_6491358-1-2182384788-e1710848276753.png">
 
-  <div>
-      <label><h2>Goal</h2></label>
+  <section id="show-page">
+    <div></div>
+    <col span="3">
+    <container class="goal-box">
+      <a href="/journalPrompts"><img id="show-box-moon"
+          src="https://totemsurftribe.files.wordpress.com/2024/03/1670133.png?resize=219%2C219"></a>
+      <label>
+        <h2>Goal</h2>
+      </label>
+      <div>
+       Goal: <%= goal.goal %>
+          <div>Action Items:<%= goal.actionItems %>
+          </div>
+          <div>Intention: <%= goal.setIntentions %>
+          </div>
+          <div>Productivity Ideas:
+            <%=goal.productivityIdeas %>
+          </div>
+          <div>Details:
+            <%= goal.additionalDetail %>
+          </div>
+          <div>Accomplish By:
+            <%= goal.finishby?.toString().slice(0, 16) %>
+          </div>
+    </container>
+    </table>
+
 
     <div>
-      <% goal.goal %>
-        <div><strong>Action Items:</strong>
-          <%= goal.actionItems %>
-        </div>
+      <label>
+        <h2>Journal Entries<br>
+          <label>Current Lunar Phase</label>
+          <%=phase%><%= phaseEmoji %></h2>
+        </lablel>
+        <form id="add-journalEntry-form" method="POST" action="/goals/<%= goal._id %>/journals">
+          <label>New Journal Entry:</label>
+          <textarea name="content"></textarea>
+          <input type="submit" value="Add New Journal Entry">
+        </form>
 
-        <div><strong>Intention:</strong>
-          <%= goal.setIntentions %>
-        </div>
-
-        <div><strong>Productivity Ideas:</strong>
-          <%=goal.productivityIdeas %>
-        </div>
-
-        <div><strong>Details:</strong>
-          <%= goal.additionalDetail %>
-        </div>
-
-        <div><strong>Accomplish By:</strong>
-          <%= goal.finishby?.toString().slice(0, 16) %>
-        </div>
     </div>
 
+      <% if (goal.journalEntry) { %>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <!-- <th>Lunar Phase</th> -->
+              <th>Jornal Entry</th>
+              <th>Reflection</th>
+            </tr>
+          </thead>
+          <tbody>
 
-
-<div>
-        <label>
-        <h2>Journal Entries</h2>
-        </lablel>
-        Themes to focus on during this time : <%=phase%>
-          <%=phaseEmoji%> | [insert themres]
-            <form id="add-journalEntry-form" method="POST" action="/goals/<%= goal._id %>/journals">
-              <label>New Journal Entry:</label>
-              <textarea name="content"></textarea>
-
-
-
-
-              <label>Lunar Phase</label>
-              <select name="moon-phase">
-                <option value="1">New Moon</option>
-                <option value="2">First Quarter</option>
-                <option value="3">Full Moon</option>
-                <option value="4">Last Quarter</option>
-                <option value="5">New Moon</option>
-              </select>
-              <input type="submit" value="Add New Journal Entry">
-            </form>
-
-          </div>
-
-            <table class="table-bordered">
-              <% if (goal.journalEntry) { %>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Date</th>
-                      <th>Lunar Phase</th>
-                      <th>Jornal Entry</th>
-                      <th>Reflection</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-
-                    <% goal.journalEntry.forEach(function(j) { %>
-                      <tr>
-                        <td class="entry-date">
-                          <%= j.createdAt.toString().slice(0, 16) %>
-                        </td>
-                        <td class="moon-phase">
+            <% goal.journalEntry.forEach(function(j) { %>
+              <tr>
+                <td class="entry-date">
+                  <%= j.createdAt.toString().slice(0, 16) %>
+                </td>
+                <!-- <td class="moon-phase">
                           <%=phase%>
                             <%=phaseEmoji%>
-                        </td>
-                        <td>
-                          <%= j.content %>
-                        </td>
+                        </td> -->
+                <td>
+                  <%= j.content %>
+                </td>
 
-                        <td>
-                          <% if (user?._id.equals(j.user)) { %>
-
-
-                            <form id="update-journalEntry-form" action="/journals/<%= j._id %>?_method=PUT"
-                              method="POST">
-                              <!-- Value attribute is being set to the comment's current text -->
-                              <input name="content" value="">
-                              <button type="submit">Update this Entry</button>
-                            </form>
+                <td>
+                  <% if (user?._id.equals(j.user)) { %>
 
 
+                    <form id="update-journalEntry-form" action="/journals/<%= j._id %>?_method=PUT" method="POST">
+                      <!-- Value attribute is being set to the comment's current text -->
+                      <input name="content" value="">
+                      <button type="submit">Update this Entry</button>
+                    </form>
 
-                          
-                            <form id="delete-journalEntry-form" action="/journals/<%= j._id %>?_method=DELETE" method="POST">
-                              <button type="submit">Delete Entry</button>
 
-                            </form>
-                            <% } %>
-                        </td>
-                      </tr>
-                      <% }); %>
-                        <tr>
-                          <td colspan="1"></td>
 
-                        </tr>
-                  </tbody>
-                </table>
-                <% } else { %>
-                  <h5>No Journal Entries Yet</h5>
-                  <% } %>
 
-                    <%- include('../partials/footer') %>
+                    <form id="delete-journalEntry-form" action="/journals/<%= j._id %>?_method=DELETE" method="POST">
+                      <button type="submit">Delete Entry</button>
+
+                    </form>
+                    <% } %>
+                </td>
+              </tr>
+              <% }); %>
+                <tr>
+                  <td colspan="1"></td>
+
+                </tr>
+          </tbody>
+        </table>
+        <% } else { %>
+          <h5>No Journal Entries Yet</h5>
+          <% } %>
+
+            <%- include('../partials/footer') %>

@@ -1,15 +1,20 @@
-const goal = require('../models/goal');
 const Goal = require('../models/goal');
 const { Moon } = require('lunarphase-js')
+const ideas = require('../data/ideas.js')
+
 
 module.imports = { Moon }
+
+
 module.exports = {
   index,
   show,
   new: newGoal,
   create,
-  // done
+  edit: editGoal,
+  update: updateGoal
 };
+
 
 // async function done(req, res){
 //   const goal = Goal.findById(req.params.id).populate('doneList')
@@ -17,6 +22,24 @@ module.exports = {
 //   await goal.save(); // save that data in the database
 //   res.redirect(`/goals/${goal._id}`)
 // }
+async function updateGoal(req, res) {
+  try {
+      const updatedGoal = await Goal.findByIdAndUpdate(req.params.id, req.body, { new: true });
+      if (!updatedGoal) {
+          return res.redirect('/goals');
+      }
+      res.redirect(`/goals/${updatedGoal._id}`);
+  } catch (err) {
+      console.error(err);
+      res.redirect('/goals');
+  }
+}
+
+async function editGoal(req, res){
+    const goal = await Goal.findById(req.params.id)
+      res.render('goals/edit', {title: 'Edit Goal', goal});
+    }
+  
 
 async function index(req, res) {
   const goals = await Goal.find({});
@@ -27,12 +50,16 @@ async function index(req, res) {
 
     return (time / 86400000) - (tzoffset / 1440) + 2440587.5;
   }
-  res.render('goals/index', { title: 'Moon goals', goals, phaseEmoji, phase });
+  res.render('goals/index', { title: 'Moon Goals', goals, phaseEmoji, phase });
 }
 
 async function show(req, res) {
   const goal = await Goal.findById(req.params.id).populate('journalEntry');
-  console.log(goal)
+
+  const journalIdeas = ideas
+  console.log(journalIdeas.waxingCrescent)
+
+
   const phaseEmoji = Moon.lunarPhaseEmoji();
   const phase = Moon.lunarPhase(); const getJulianDate = (date = new Date()) => {
     const time = date.getTime();
@@ -40,13 +67,14 @@ async function show(req, res) {
 
     return (time / 86400000) - (tzoffset / 1440) + 2440587.5;
   }
-  res.render('goals/show', { title: 'Goal Details', goal, phase, phaseEmoji });
+
+  res.render('goals/show', { title: 'Goal Details', goal, phase, phaseEmoji, journalIdeas});
 }
 
 function newGoal(req, res) {
   const newGoaldate = new Goal();
-            const fb = newGoaldate.finishby;
-            const finishDate = fb.toISOString().slice(0, 16)
+  const fb = newGoaldate.finishby;
+  const finishDate = fb.toISOString().slice(0, 16)
   const phaseEmoji = Moon.lunarPhaseEmoji();
   const phase = Moon.lunarPhase(); const getJulianDate = (date = new Date()) => {
     const time = date.getTime();

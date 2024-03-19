@@ -1,6 +1,5 @@
 const { Moon } = require('lunarphase-js')
 const JournalPrompt = require('../models/journalPrompt');
-
 module.imports = { Moon, JournalPrompt }
 
 module.exports = {
@@ -17,8 +16,6 @@ async function showPrompts(req, res) {
 
     return (time / 86400000) - (tzoffset / 1440) + 2440587.5;
   }
-
-  // console.log(journalPrompts.newMoonPrompt)
-  res.render('journalprompts/show', { title: 'Working With Moon Energies', journalPrompts, phaseEmoji, phase });
+  res.render('journalprompts/show', { title: 'Working With Moon Energies', journalPrompts, phaseEmoji, phase});
 }
 

@@ -25,7 +25,7 @@ const journalPromptSchema = new Schema({
 waxingGibbous: {
     name: String, 
     type: String,
-    enum: ['Time for Refinement', 'Endure', 'Celebrate']
+    ideas: ['Time for Refinement', 'Endure', 'Celebrate']
 },
   fullMoon: {
     name: String, 
@@ -42,7 +42,7 @@ waxingGibbous: {
   thirdQuarter: {
     name: String, 
     type: String,
-    enum: ['Balance', 'Set Boundaries', 'Finish Unfinished Projects', 'Good Time to Wrap Up any Loose Ends'] 
+    ideas: ['Balance', 'Set Boundaries', 'Finish Unfinished Projects', 'Good Time to Wrap Up any Loose Ends'] 
   },
 
   waningCrescent: {

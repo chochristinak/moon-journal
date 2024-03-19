@@ -1,42 +1,48 @@
-
 <%- include('../partials/header') %>
 
-<h2>Based on today's date: <%= date %> </h2>
+  <h3>Based on today's date: <%= date %>
+  </h3>
 
-<h3>The Current MOON PHASE is   <%=phase%><%=phaseEmoji%></h3>
+  <h2>The Current MOON PHASE is <br>
+    <%=phase%>
+      <%=phaseEmoji%>
+  </h2>
+  <a href="/journalPrompts">How to Work with this Moon Cycle</a>
 
-<!-- <img src="https://totemsurftribe.files.wordpress.com/2024/03/1mjphrdciuosnyrxbt5mtig.webp?resize=438%2C438" aria-flowto="div"> -->
-
-<form id="new-goal-form" action="/goals" method="POST">
-  <label>Now let's set some Moonergy Goals</label><br>
-  <label>Set a Goal:</label>
-  <input type="text" name="goal"><br>
-  <label>Define Action Items:</label>
-  <input type="text"name="actionItems"><br>
-  <label>Set an Intention:</label>
-  <input type="text" name="setIntentions"><br>
-  <label>Productivity Ideas:</label>
-  <select name="productivityIdeas">
-    <option value="energy">Manage Energy Wisely</option>
-    <option value="focus">Focus, Tune Out Distractions</option>
-    <option value="refine">Refine Your Space</option>
-    <option value="prioritize">Prioritze Your Health</option>
-    <option value="declutter">Stay Organized</option>
-    <option value="break">Take Breaks</option><br>
-  </select><br>
-  <label>Additional Detail:</label>
-  <input type="text" name="additionalDetail"><br>
-  <label>Accomplish by:
-    <input type="datetime-local" name="finishby" value="<%= finishDate %>">
-    <br>
-</label><br>
   <br>
 
+  <!-- <img src="https://totemsurftribe.files.wordpress.com/2024/03/1mjphrdciuosnyrxbt5mtig.webp?resize=438%2C438" aria-flowto="div"> -->
+
+  <form id="new-goal-form" action="/goals" method="POST">
+    <label>Now let's set some Moonergy Goals</label><br>
+    <label>Set a Goal:</label>
+    <input type="text" name="goal"><br>
+    <label>Define Action Items:</label>
+    <input type="text" name="actionItems"><br>
+    <label>Set an Intention:</label>
+    <input type="text" name="setIntentions"><br>
+    <label>Productivity Ideas:</label>
+    <select name="productivityIdeas">
+      <option value="energy">Manage Energy Wisely</option>
+      <option value="focus">Focus, Tune Out Distractions</option>
+      <option value="refine">Refine Your Space</option>
+      <option value="prioritize">Prioritze Your Health</option>
+      <option value="declutter">Stay Organized</option>
+      <option value="break">Take Breaks</option><br>
+    </select><br>
+    <label>Additional Detail:</label>
+    <input type="text" name="additionalDetail"><br>
+    <label>Accomplish by:
+      <input type="datetime-local" name="finishby" value="<%= finishDate %>">
+      <br>
+    </label><br>
+    <br>
 
 
-  <input type="submit" value="Add Goal">
+
+    <input type="submit" value="Add Goal">
 
 
-</form>
+  </form>
 
-<%- include('../partials/footer') %>
+  <%- include('../partials/footer') %>

@@ -1,47 +1,42 @@
 <%- include('../partials/header') %>
-<%= title %>
-<img id="index-phase"src="https://totemsurftribe.files.wordpress.com/2024/03/pngaaa.com-1343387.png">
+  <%= title %>
+    <img id="index-phase" src="https://totemsurftribe.files.wordpress.com/2024/03/pngaaa.com-1343387.png">
 
-  <table id="list">
-    <thead>
-      <tr>
-        <th>Goal</th>
-        <th>Purpose</th>
-        <th>Lunar Phase</th>
-        <th>Journaling</th>
-        <th>Complete?</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% goals.forEach(function(goal) { %>
+    <table id="list">
+      <thead>
         <tr>
-          <td>
-            <%= goal.goal %>
-          </td>
-          <td>
-            <%= goal.setIntentions %>
-          </td>
-          <td>
-            <%= phase %>
-            <%= phaseEmoji %>
-          </td>
-          <td><a href="/goals/<%= goal._id %>">RE-VISIT</a></td>
-          <td><a href="???">DONE</a></td></label>
-          </td>
-          
-          <badge container
+          <th>Goal</th>
+          <th>Purpose</th>
+          <th>Journaling</th>
+          <th>Edit Goal</th>
         </tr>
+      </thead>
+      <tbody>
+        <% goals.forEach(function(goal) { %>
+          <tr>
+            <td>
+              <%= goal.goal %>
+            </td>
+            <td>
+              <%= goal.setIntentions %>
+            </td>
+            <td><a href="/goals/<%= goal._id %>">RE-VISIT</a></td>
 
-        <% }); %>
-    </tbody>
-  </table>
+            <td><a href="/goals/<%= goal._id %>/edit">EDIT</a></td>
+            </td>
 
-  <table id="list">
-    <thead>
-      <tr>
-        <th>Growth</th>
-      </tr>
-    </thead>
-    <tbody>
+         </tr>
 
-  <%- include('../partials/footer') %>
+              <% }); %>
+      </tbody>
+    </table>
+
+    <table id="list">
+      <thead>
+        <tr>
+          <th>Growth</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <%- include('../partials/footer') %>
