@@ -1,6 +1,6 @@
 
 <div id="header" align="center">
-    <img src="https://see.fontimg.com/api/renderfont4/RXOM/eyJyIjoiZnMiLCJoIjozNSwidyI6MTAwMCwiZnMiOjM1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/TW9vbiBKb3VybmFsIA/monoton.png">
+    <img src="https://totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-21-at-3.27.53e280afpm.png?resize=219%2C219">
   </div>
   (https://github.com/chochristinak/moon-journal.git)
   
