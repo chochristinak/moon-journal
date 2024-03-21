@@ -1,5 +1,6 @@
 <%- include('../partials/header') %>
   <%= title %>
+  <section id="index-page">
     <img id="index-phase" src="https://totemsurftribe.files.wordpress.com/2024/03/pngaaa.com-1343387.png">
 
     <table id="list">
@@ -16,26 +17,29 @@
       </thead>
       <tbody>
         <% goals.forEach(function(goal) { %>
-        
-          <tr>
-            <!-- <td><%= goal.createdAt.toString().slice(0, 16) %></td> -->
-            <td><%= goal.goal %></td>
-            <td>
-              <%= goal.setIntentions %>
-            </td>
-            <td><a href="/goals/<%= goal._id %>">JOURNAL</a></td>
-            <td><a href="/goals/<%= goal._id %>/edit">EDIT</a></td>
-            <td><a href="/gains">DONE</a></td>
-            <td><form id="delete-goal" action="/goals/<%= goal._id %>?_method=DELETE" method="POST"> 
-            <button type="submit">DELETE</button>
-            </form></td>
+          <% if (!goal.accomplished) { %>
+            <tr>
+              <!-- <td><%= goal.createdAt.toString().slice(0, 16) %></td> -->
+              <td>
+                <%= goal.goal %>
+              </td>
+              <td>
+                <%= goal.setIntentions %>
+              </td>
+              <td><a href="/goals/<%= goal._id %>">JOURNAL</a></td>
+              <td><a href="/goals/<%= goal._id %>/edit">EDIT</a></td>
+              <td><a href="/gains">DONE</a></td>
+              <td>
+                <form id="delete-goal" action="/goals/<%= goal._id %>?_method=DELETE" method="POST">
+                  <button type="submit">DELETE</button>
+                </form>
+              </td>
+              </td>
+              <% } %>
+            </tr>
 
-            
-            </td>
-    
-         </tr>
+            <% }); %>
 
-          <% }); %>
-   
-
-        <%- include('../partials/footer') %>
+          </section>
+          
+              <%- include('../partials/footer') %>

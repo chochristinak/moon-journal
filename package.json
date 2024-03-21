@@ -23,6 +23,7 @@
     "node-fetch": "^2.7.0",
     "passport": "^0.7.0",
     "passport-google-oauth": "^2.0.0",
+    "popper.js": "^1.16.1",
     "react-moonphase": "^1.1.1",
     "seed": "^0.4.4"
   }

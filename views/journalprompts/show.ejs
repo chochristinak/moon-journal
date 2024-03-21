@@ -1,132 +1,129 @@
 <%- include('../partials/header') %>
 
 
-    <%= title %>
-  <img src="https://totemsurftribe.files.wordpress.com/2024/03/e28094pngtreee28094minimalist-combination-orange-moon-phase_6491341.png?resize=219%2C219">
+  <%= title %>
+    <img
+      src="https://totemsurftribe.files.wordpress.com/2024/03/e28094pngtreee28094minimalist-combination-orange-moon-phase_6491341.png?resize=219%2C219">
 
-  <table id="journal-ideas">
-  <section id="journalprompts-show-page">
+    <table id="journal-ideas">
+      <section id="journalprompts-show-page">
 
-    <thead>
-     <h2> Current Moon Phase: <%= phase %>
-        <%= phaseEmoji %></h2>
-    </thead>
-
-
-    <tbody>
-      <tr>
-        <h3>Moon Magic: Harnessing the Power of Moon Energies means you align your routines and practices with the
-          energies
-          of each cycle. The moon can serve as a "Spiritual Calender".</h3>
-      </tr>
-
-      <tr>
-        <h2>Here are some themes to consider for each moon phase:</h2>
-      </tr>
-
-      <tr>
-       
+        <thead>
+          <h2> Current Moon Phase: <%= phase %>
+              <%= phaseEmoji %>
+          </h2>
+        </thead>
 
 
-          <td>
-            <div class="main-prompts-circle-wrapper">
+        <tbody>
+          <badge id="moon-magic">
+            <h3> "We live by the sun.. <br>and we feel by the moon"<br>
+              Moon Magic: Harnessing the Power of Moon Energies means you align your routines and practices with the
+              energies
+              of each cycle. The moon can serve as a "Spiritual Calender".</h3>
+          </badge>
+          </tr>
+
+          <tr>
+            <h2>Here are some themes to consider for each moon phase:</h2>
+          </tr>
+
+          <tr>
+
+
+
+            <td>
+              <div class="main-prompts-circle-wrapper">
+                <div class="container">
+                  <div id="" class="sticky-notes paper">
+                    New Moon: Fresh Start
+                  </div>
+                </div>
+            </td>
+
+            <td>
               <div class="container">
                 <div id="" class="sticky-notes paper">
-                  New Moon: Fresh Start
+                  Waxing Crescent: Manifest
                 </div>
               </div>
-          </td>
+            </td>
 
-          <td>
-            <div class="container">
-              <div id="" class="sticky-notes paper">
-                Waxing Crescent: Manifest
+            <td>
+              <div class="container">
+                <div id="" class="sticky-notes paper">
+                  First Quarter: Maintain Balance
+                </div>
               </div>
-            </div>
-          </td>
+            </td>
 
-          <td>
-            <div class="container">
-              <div id="" class="sticky-notes paper">
-                First Quarter: Maintain Balance
+            <td>
+              <div class="container">
+                <div id="" class="sticky-notes paper">
+                  Waxing Gibbous: Endure
+                </div>
               </div>
-            </div>
-          </td>
+            </td>
+          </tr>
 
-          <td>
-            <div class="container">
-              <div id="" class="sticky-notes paper">
-                Waxing Gibbous: Endure
+          <tr>
+            <td>
+              <div class="container">
+                <div id="" class="sticky-notes paper">
+                  Full Moon: Culmination
+                </div>
               </div>
-            </div>
-          </td>
-      </tr>
+            </td>
+            <td>
+              <div class="container">
+                <div id="" class="sticky-notes paper">
+                  Waning Gibbous: Release
+                </div>
+              </div>
+            </td>
 
+            <td>
+              <div class="container">
+                <div class="sticky-notes paper">
+                  Third Quarter: Set Boundaries
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="container">
+                <div class="sticky-notes paper">
+                  Waning Crescent: Self-Care
+                </div>
+              </div>
+            </td>
+          </tr>
+      </section>
       <tr>
         <td>
-          <div class="container">
-            <div id="" class="sticky-notes paper">
-              Full Moon: Culmination
-            </div>
-          </div>
+          <%= journalPrompts.newMoon %>
         </td>
         <td>
-          <div class="container">
-            <div id="" class="sticky-notes paper">
-              Waning Gibbous: Release
-            </div>
-          </div>
+          <%= journalPrompts.waxingCrescent %>
+        </td>
+        <td>
+          <%= journalPrompts.firstQuarter %>
+        </td>
+        <td>
+          <%= journalPrompts.waxingGibbous %>
+        </td>
+        <td>
+          <%= journalPrompts.fullMoon %>
+        </td>
+        <td>
+          <%= journalPrompts.waningGibbous %>
+        </td>
+        <td>
+          <%= journalPrompts.thirdQuarter %>
         </td>
 
-        <td>
-          <div class="container">
-            <div class="sticky-notes paper">
-              Third Quarter: Set Boundaries
-            </div>
-          </div>
-        </td>
-        <td>
-          <div class="container">
-            <div class="sticky-notes paper">
-              Waning Crescent: Self-Care
-            </div>
-          </div>
-        </td>
+
       </tr>
-  </section>
-  <tr>
-    <td>
-      <%= journalPrompts.newMoon %>
-    </td>
-    <td>
-      <%= journalPrompts.waxingCrescent %>
-    </td>
-    <td>
-      <%= journalPrompts.firstQuarter %>
-    </td>
-    <td>
-      <%= journalPrompts.waxingGibbous %>
-    </td>
-    <td>
-      <%= journalPrompts.fullMoon %>
-    </td>
-    <td>
-      <%= journalPrompts.waningGibbous %>
-    </td>
-    <td>
-      <%= journalPrompts.thirdQuarter %>
-    </td>
+      </tbody>
+    </table>
 
-
-  </tr>
-  </tbody>
-  </table>
-
-
-
-
-
-
-
-
-  <%- include('../partials/footer') %>
+    <%- include('../partials/footer') %>
