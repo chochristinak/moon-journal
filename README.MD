@@ -11,6 +11,9 @@
   
   When setting goals, the user is encouraged to define specific goals by breaking them down into actionable steps and ideas for productivity. Additionally, a user can write journal entries to track progress about their goals and get in touch with their inner state. The app gives you themes to focus on for the current moon phase before you start journaling. 
 
+  _All Goals UI_ <br>
+  ![Screenshot](https://totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-21-at-3.59.20e280afpm.png?resize=219%2C219)
+
   _Homepage UI_ <br>
   ![Screenshot](https://totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-21-at-2.51.17e280afpm.png?resize=438%2C438)
   
@@ -19,9 +22,7 @@
   <br>
   
   ![Screenshot](https://totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-21-at-2.53.22e280afpm.png?resize=438%2C438)
- 
-  _All Goals UI_ <br>
-  ![Screenshot](https://totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-21-at-3.59.20e280afpm.png?resize=219%2C219)
+
 
  _New Goal UI_ <br>
   ![Screenshot](https://totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-21-at-2.54.39e280afpm.png?resize=438%2C438)
