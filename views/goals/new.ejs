@@ -1,5 +1,7 @@
 <%- include('../partials/header') %>
-
+<img id="goals-show-img"
+    src="https://totemsurftribe.files.wordpress.com/2024/03/e28094pngtreee28094moon-phase-geometric-black-figure_6491358-1-2182384788-e1710848276753.png">
+    <section id ="new-goal-page">
   <h3>today's date: <%= date %>
   </h3>
 
@@ -14,7 +16,7 @@
   <!-- <img src="https://totemsurftribe.files.wordpress.com/2024/03/1mjphrdciuosnyrxbt5mtig.webp?resize=438%2C438" aria-flowto="div"> -->
 
   <form id="new-goal-form" action="/goals" method="POST">
-    <label>Now let's set some Moonergy Goals</label><br>
+   <br>
     <label>Set a Goal:</label>
     <input type="text" name="goal"><br>
     <label>Define Action Items:</label>
@@ -44,5 +46,6 @@
 
 
   </form>
+</section>
 
   <%- include('../partials/footer') %>

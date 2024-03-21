@@ -4,11 +4,11 @@ const ideas = {
 NEW:['New Intentions', 'Rest', 'Reflect', 'Fresh Start', 'Plan'],
 'WAXING CRESCENT':['Hustle', 'Manifest', 'Action'],
 'FIRST QUARTER':['Projects', 'Balance', 'Overcome', 'Changes'],
-'WAXING GIBBOUS':['Refinement', 'Preparation', 'Endure', 'Celebrate'],
-FULL:['Culmination', 'Intenesity', 'Fullfillment', 'Gratitude', 'Present'],
+'WAXING GIBBOUS':['Refine', 'Prepare', 'Endure', 'Celebrate'],
+FULL:['Culmination', 'Intensity', 'Fullfillment', 'Gratitude', 'Presence'],
 'WANING GIBBOUS':['Release', 'Let Go', 'Clear Space'],
-'LAST QUARTER': ['Balance', 'Boundaries', 'Finish', 'Wrap Up'],
-'WANING CRESCENT': ['Self-care', 'Recharge', 'Recuperate', 'Welcome'],
+'LAST QUARTER': ['Balance', 'Set Boundaries', 'Finish Projects', 'Wrap Up'],
+'WANING CRESCENT': ['Self-care', 'Recharge', 'Recuperate', 'Welcome New Moon'],
 }
 
 module.exports = ideas 

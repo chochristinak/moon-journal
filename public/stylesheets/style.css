@@ -1,4 +1,6 @@
-#show-page {
+#show-page,
+#edit-goal-page,
+#new-goal-page{
   /* From https://css.glass */
   background: rgba(12, 12, 17, 0.308);
   border-radius: 20px;
@@ -6,17 +8,6 @@
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(10px);
   border: 5px dotted rgba(255, 255, 255, 0.44);
-}
-
-#edit-goal-page {
-  /* From https://css.glass */
-  background: rgba(41, 41, 54, 0.308);
-  border-radius: 20px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 5px dotted rgba(255, 255, 255, 0.44);
-  /* add backround image? */
 }
 
 
@@ -148,8 +139,8 @@ h3 {
   background-color: rgb(174, 174, 173);
   height: 80px;
   width: 100px;
-  padding: 10px;
-  display: flex;
+  padding: 60px;
+  display: float-;
   align-items: center;
   justify-content: center;
   transform: rotate(-10deg);

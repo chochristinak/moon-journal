@@ -7,11 +7,10 @@ module. exports = {
 }
 
 async function showGains(req, res){
-    const gain = await Gain.find({}).sort('goal') 
-    const goal = await Goal.findById(req.params.id)
-  gain.goalsDone.push(req.body.goalId)
-    await gain.save();
-    await goal.save();
+    // const gain = await Gain.find({}).populate('goal') 
+    // const goal = await Goal.findById(req.params.id)
+    // await gain.save();
+    // await goal.save();
 
-    res.render('gains/show', {title: 'Celebrate Your Wins'})
+    // res.render('gains/show', {title: 'Celebrate Your Wins'})
 }
