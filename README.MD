@@ -11,22 +11,25 @@
   
   When setting goals, the user is encouraged to define specific goals by breaking them down into actionable steps and ideas for productivity. Additionally, a user can write journal entries to track progress about their goals and get in touch with their inner state. The app gives you themes to focus on for the current moon phase before you start journaling. 
 
-  _Homepage UI_
+  _Homepage UI_ <br>
   ![Screenshot](https://totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-21-at-2.51.17e280afpm.png?resize=438%2C438)
   
-  _Moon Journaling Info UI_
+  _Moon Journaling Info UI_ <br>
   ![Screenshot](https://totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-21-at-2.53.05e280afpm.png?resize=438%2C438)
   
   ![Screenshot](https://totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-21-at-2.53.22e280afpm.png?resize=438%2C438)
  
-  _All Goals UI_
+  _All Goals UI_<br>
   ![Screenshot] (https://totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-21-at-2.54.20e280afpm.png?resize=438%2C438)
 
- _New Goal UI_
+ _New Goal UI_<br>
   ![Screenshot] (https://totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-21-at-2.54.39e280afpm.png?resize=438%2C438)
 
-_Specific Goal with Journal & Moon Themes UI_
+_Specific Goal with Journal & Moon Themes UI_<br>
   ![Screenshot] (https://totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-21-at-2.55.09e280afpm.png?resize=438%2C438)
+
+
+
   
   ## :fire: **Getting Started**
   
@@ -47,7 +50,7 @@ _Specific Goal with Journal & Moon Themes UI_
   
   
   
-  **Additional Resources**
+  **Additional Resources**<br>
   1. Google
   2. W3
   3. GeeksforGeeks
@@ -57,15 +60,17 @@ _Specific Goal with Journal & Moon Themes UI_
   7. Stack Overfow
   8. Mongoose JS Docs Guide
   9. YouTube
-  
+  10. Many more online resources
+
   
   [Click to View Project Planning!]
   (https://trello.com/b/Cp5gUwL2/project-2-full-stack-application) 
   
   
-  
   ## :satellite: **Upcoming Features**
   - :ghost: Mobile-friendly app
   - :ghost: Notifications for Upcoming Moon Phase
-  - :ghost: 
+  - :ghost: Style updates
+  - :ghost: A "Win" List for the User to track their accomplishments
+
   
