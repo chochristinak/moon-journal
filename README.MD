@@ -1,6 +1,6 @@
 
 <div id="header" align="center">
-    <img src="https://totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-21-at-3.27.53e280afpm.png?resize=219%2C219">
+    <img src="https://i0.wp.com/totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-20-at-11.04.03e280afam.png?ssl=1">
   </div>
   (https://github.com/chochristinak/moon-journal.git)
   
