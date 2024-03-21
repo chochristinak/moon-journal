@@ -17,7 +17,7 @@ require('./config/passport');
 const indexRouter = require('./routes/index');
 const goalsRouter = require('./routes/goals');
 const journalsRouter = require('./routes/journals');
-const journalPromptsRouter = require('./routes/journalprompts');
+const journalPromptsRouter = require('./routes/journalPrompts');
 const { show } = require('./controllers/goals');
 
 
