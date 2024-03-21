@@ -7,8 +7,8 @@ module.exports = {
 }
 
 async function showPrompts(req, res) {
-  const journalPrompts = await JournalPrompt.find({}, {_ideas: 1});
-  console.log(JournalPrompt.find({}, {_ideas: 1}))
+  const journalPrompts = await JournalPrompt.find({}, { _ideas: 1 });
+  console.log(JournalPrompt.find({}, { _ideas: 1 }))
   const phaseEmoji = Moon.lunarPhaseEmoji();
   const phase = Moon.lunarPhase(); const getJulianDate = (date = new Date()) => {
     const time = date.getTime();
@@ -16,6 +16,6 @@ async function showPrompts(req, res) {
 
     return (time / 86400000) - (tzoffset / 1440) + 2440587.5;
   }
-  res.render('journalprompts/show', { title: 'Working With Moon Energies', journalPrompts, phaseEmoji, phase});
+  res.render('journalprompts/show', { title: 'Working With Moon Energies', journalPrompts, phaseEmoji, phase });
 }
 
