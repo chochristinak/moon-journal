@@ -20,13 +20,13 @@
   ![Screenshot](https://totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-21-at-2.53.22e280afpm.png?resize=438%2C438)
  
   _All Goals UI_<br>
-  ![Screenshot] (https://totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-21-at-2.54.20e280afpm.png?resize=438%2C438)
+  ![Screenshot](https://totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-21-at-2.54.20e280afpm.png?resize=438%2C438)
 
  _New Goal UI_<br>
-  ![Screenshot] (https://totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-21-at-2.54.39e280afpm.png?resize=438%2C438)
+  ![Screenshot](https://totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-21-at-2.54.39e280afpm.png?resize=438%2C438)
 
 _Specific Goal with Journal & Moon Themes UI_<br>
-  ![Screenshot] (https://totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-21-at-2.55.09e280afpm.png?resize=438%2C438)
+  ![Screenshot](https://totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-21-at-2.55.09e280afpm.png?resize=438%2C438)
 
 
 
