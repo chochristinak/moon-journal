@@ -21,7 +21,7 @@
   ![Screenshot](https://totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-21-at-2.53.22e280afpm.png?resize=438%2C438)
  
   _All Goals UI_<br>
-  ![Screenshot](https://totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-21-at-2.54.20e280afpm-1.png?resize=219%2C219)
+  ![Screenshot](https://totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-21-at-3.59.20e280afpm.png)
 
  _New Goal UI_<br>
   ![Screenshot](https://totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-21-at-2.54.39e280afpm.png?resize=438%2C438)
