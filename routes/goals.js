@@ -19,5 +19,13 @@ router.post('/', ensureLoggedIn, goalsCtrl.create);
 router.get('/:id/edit', ensureLoggedIn, goalsCtrl.edit)
 
 router.put('/:id', ensureLoggedIn, goalsCtrl.update)
+
+router.delete('/:id', ensureLoggedIn, goalsCtrl.delete);
+// move to done
+router.get('/:id', ensureLoggedIn, goalsCtrl.done);
+
+
+
+
 	
 module.exports = router;

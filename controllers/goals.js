@@ -12,39 +12,55 @@ module.exports = {
   new: newGoal,
   create,
   edit: editGoal,
-  update: updateGoal
+  update: updateGoal,
+  delete: deleteGoal,
+  done
 };
 
+async function done(req, res){
+  const goal = Goal.findById(req.params.id).populate('doneList')
+  console.log(goal)
+  goal.doneList.push(req.body.id)
+  await goal.save(); // save that data in the database
+  res.render('/wins', {title: 'Celebrate Your Wins'}, goal)
+}
 
-// async function done(req, res){
-//   const goal = Goal.findById(req.params.id).populate('doneList')
-//   goal.doneList.push(req.body.id)
-//   await goal.save(); // save that data in the database
-//   res.redirect(`/goals/${goal._id}`)
-// }
-async function updateGoal(req, res) {
+async function deleteGoal(req, res) {
   try {
-      const updatedGoal = await Goal.findByIdAndUpdate(req.params.id, req.body, { new: true });
-      if (!updatedGoal) {
-          return res.redirect('/goals');
-      }
-      res.redirect(`/goals/${updatedGoal._id}`);
+    await Goal.findByIdAndDelete(req.params.id)
+    res.redirect('/goals')
   } catch (err) {
-      console.error(err);
-      res.redirect('/goals');
+    console.log(err)
+    req.redirect('/goals')
   }
 }
 
-async function editGoal(req, res){
-    const goal = await Goal.findById(req.params.id)
-      res.render('goals/edit', {title: 'Edit Goal', goal});
+
+async function updateGoal(req, res) {
+  try {
+    const updatedGoal = await Goal.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    if (!updatedGoal) {
+      return res.redirect('/goals');
     }
-  
+    res.redirect(`/goals/${updatedGoal._id}`);
+  } catch (err) {
+    console.error(err);
+    res.redirect('/goals');
+  }
+}
+
+
+async function editGoal(req, res) {
+  const goal = await Goal.findById(req.params.id)
+  res.render('goals/edit', { title: 'Edit Goal', goal });
+}
+
 
 async function index(req, res) {
   const goals = await Goal.find({});
   const phaseEmoji = Moon.lunarPhaseEmoji();
-  const phase = Moon.lunarPhase(); const getJulianDate = (date = new Date()) => {
+  const phase = Moon.lunarPhase(); 
+  const getJulianDate = (date = new Date()) => {
     const time = date.getTime();
     const tzoffset = date.getTimezoneOffset()
 
@@ -55,21 +71,17 @@ async function index(req, res) {
 
 async function show(req, res) {
   const goal = await Goal.findById(req.params.id).populate('journalEntry');
-
-  const journalIdeas = ideas
-  console.log(journalIdeas.waxingCrescent)
-
-
   const phaseEmoji = Moon.lunarPhaseEmoji();
-  const phase = Moon.lunarPhase(); const getJulianDate = (date = new Date()) => {
-    const time = date.getTime();
-    const tzoffset = date.getTimezoneOffset()
-
-    return (time / 86400000) - (tzoffset / 1440) + 2440587.5;
+  const phase = Moon.lunarPhase(); 
+  const journalIdeas = ideas[phase.toUpperCase()]
+  const getJulianDate = (date = new Date()) => {
+  const time = date.getTime();
+  const tzoffset = date.getTimezoneOffset()
+  return (time / 86400000) - (tzoffset / 1440) + 2440587.5;
   }
-
   res.render('goals/show', { title: 'Goal Details', goal, phase, phaseEmoji, journalIdeas});
 }
+
 
 function newGoal(req, res) {
   const newGoaldate = new Goal();
@@ -95,7 +107,8 @@ async function create(req, res) {
   } catch (err) {
     console.log(err);
     const phaseEmoji = Moon.lunarPhaseEmoji();
-    const phase = Moon.lunarPhase(); const getJulianDate = (date = new Date()) => {
+    const phase = Moon.lunarPhase(); 
+    const getJulianDate = (date = new Date()) => {
       const time = date.getTime();
       const tzoffset = date.getTimezoneOffset()
 

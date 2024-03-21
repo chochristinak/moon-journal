@@ -1,12 +1,12 @@
 // https://github.com/jasonsturges/lunarphase-js
 
-// ////for specific  date
+////for specific  date
 module.imports = { Moon } 
 // const date = new Date();
 // const phase = Moon.lunarPhase(date);
 
 
-///lunar phase for specific date///
+///lunar phase for todays's date///
 const phaseEmoji = Moon.lunarPhaseEmoji();
 const phase = Moon.lunarPhase();const getJulianDate = (date = new Date()) => {
     const time = date.getTime();

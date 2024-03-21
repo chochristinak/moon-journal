@@ -31,15 +31,18 @@
 
 
     <div>
-      <label>
-        <h2>Journal Entries<br>
-          <label>Current Lunar Phase</label>
-          <%=phase%><%= phaseEmoji %></h2>
-        </lablel>
+     
+     <br>
+          <label>Current Lunar Phase</label><h2><%=phase%><%= phaseEmoji %></h2>
+          <span class="badge">"<%= journalIdeas %>"</span>
+
+        </label>
+        <br>
+        <br>
         <form id="add-journalEntry-form" method="POST" action="/goals/<%= goal._id %>/journals">
-          <label>New Journal Entry:</label>
+          <label><br>New Journal Entry</label>
           <textarea name="content"></textarea>
-          <input type="submit" value="Add New Journal Entry">
+          <input type="submit" value="New Journal Entry">
         </form>
 
     </div>
@@ -62,9 +65,9 @@
                   <%= j.createdAt.toString().slice(0, 16) %>
                 </td>
                 <!-- <td class="moon-phase">
-                          <%=phase%>
-                            <%=phaseEmoji%>
-                        </td> -->
+                          <%=phase.createdAt%>
+                            <%=phaseEmoji.createdAt%> -->
+                        </td>
                 <td>
                   <%= j.content %>
                 </td>
@@ -84,7 +87,6 @@
 
                     <form id="delete-journalEntry-form" action="/journals/<%= j._id %>?_method=DELETE" method="POST">
                       <button type="submit">Delete Entry</button>
-
                     </form>
                     <% } %>
                 </td>

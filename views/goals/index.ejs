@@ -5,38 +5,37 @@
     <table id="list">
       <thead>
         <tr>
+          <!-- <th>Date</th> -->
           <th>Goal</th>
           <th>Purpose</th>
-          <th>Journaling</th>
-          <th>Edit Goal</th>
+          <th>Progress</th>
+          <th>Evolve</th>
+          <th>&#127804;</th>
+          <th>Release</th>
         </tr>
       </thead>
       <tbody>
         <% goals.forEach(function(goal) { %>
+        
           <tr>
-            <td>
-              <%= goal.goal %>
-            </td>
+            <!-- <td><%= goal.createdAt.toString().slice(0, 16) %></td> -->
+            <td><%= goal.goal %></td>
             <td>
               <%= goal.setIntentions %>
             </td>
-            <td><a href="/goals/<%= goal._id %>">RE-VISIT</a></td>
-
+            <td><a href="/goals/<%= goal._id %>">JOURNAL</a></td>
             <td><a href="/goals/<%= goal._id %>/edit">EDIT</a></td>
-            </td>
+            <td><a href="/gains">DONE</a></td>
+            <td><form id="delete-goal" action="/goals/<%= goal._id %>?_method=DELETE" method="POST"> 
+            <button type="submit">DELETE</button>
+            </form></td>
 
+            
+            </td>
+    
          </tr>
 
-              <% }); %>
-      </tbody>
-    </table>
-
-    <table id="list">
-      <thead>
-        <tr>
-          <th>Growth</th>
-        </tr>
-      </thead>
-      <tbody>
+          <% }); %>
+   
 
         <%- include('../partials/footer') %>

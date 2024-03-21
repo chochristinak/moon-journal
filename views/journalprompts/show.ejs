@@ -2,112 +2,129 @@
   <h1>
     <%= title %>
   </h1>
-
+  <table id="journal-ideas">
   <section id="journalprompts-show-page">
 
-
-    <div>
-      <h2>Current Moon Phase: <%= phase %>
-          <%= phaseEmoji %>
-      </h2>
-    </div>
-
-    <h3>Moon Magic: Harnessing the Spirtual Power of Moon Energies means you align your routines and practices with the energies of each cycle. The moon can serve as a "Spiritual Calender".</h3>
-    </div>
-    <h2>Here are some themes to consider for each moon phase:</h2>
-    </div>
-    <table id="journal-ideas">
+    <thead>
+     <h2> Current Moon Phase: <%= phase %>
+        <%= phaseEmoji %></h2>
+    </thead>
 
 
-      <div class="main-prompts-circle-wrapper">
-        <table class="journalprompts-phase">
+    <tbody>
+      <tr>
+        <h3>Moon Magic: Harnessing the Power of Moon Energies means you align your routines and practices with the
+          energies
+          of each cycle. The moon can serve as a "Spiritual Calender".</h3>
+      </tr>
+
+      <tr>
+        <h2>Here are some themes to consider for each moon phase:</h2>
+      </tr>
+
+      <tr>
+       
 
 
-          <div class="container">
-            <div id= "" class="sticky-notes paper">
-              New Moon: Fresh Start 
+          <td>
+            <div class="main-prompts-circle-wrapper">
+              <div class="container">
+                <div id="" class="sticky-notes paper">
+                  New Moon: Fresh Start
+                </div>
+              </div>
+          </td>
+
+          <td>
+            <div class="container">
+              <div id="" class="sticky-notes paper">
+                Waxing Crescent: Manifest
+              </div>
             </div>
-          </div>
+          </td>
 
-          <div class="container">
-            <div id= "" class="sticky-notes paper">
-              Waxing Crescent: Manifest
+          <td>
+            <div class="container">
+              <div id="" class="sticky-notes paper">
+                First Quarter: Maintain Balance
+              </div>
             </div>
-          </div>
+          </td>
 
-
-
-          <div class="container">
-            <div id= "" class="sticky-notes paper">
-              First Quarter: Maintain Balance
+          <td>
+            <div class="container">
+              <div id="" class="sticky-notes paper">
+                Waxing Gibbous: Endure
+              </div>
             </div>
-          </div>
+          </td>
+      </tr>
 
+      <tr>
+        <td>
           <div class="container">
-            <div id= "" class="sticky-notes paper">
-              Waxing Gibbous: Endure
-            </div>
-          </div>
-
-          <div class="container">
-            <div id= "" class="sticky-notes paper">
+            <div id="" class="sticky-notes paper">
               Full Moon: Culmination
             </div>
           </div>
-
+        </td>
+        <td>
           <div class="container">
-            <div id= "" class="sticky-notes paper">
+            <div id="" class="sticky-notes paper">
               Waning Gibbous: Release
             </div>
           </div>
+        </td>
 
-
-
+        <td>
           <div class="container">
             <div class="sticky-notes paper">
               Third Quarter: Set Boundaries
             </div>
           </div>
-
+        </td>
+        <td>
           <div class="container">
             <div class="sticky-notes paper">
               Waning Crescent: Self-Care
             </div>
           </div>
-
-          <tr>
-            <td>
-              <%= journalPrompts.newMoon %>
-            </td>
-            <td>
-              <%= journalPrompts.waxingCrescent %>
-            </td>
-            <td>
-              <%= journalPrompts.firstQuarter %>
-            </td>
-            <td>
-              <%= journalPrompts.waxingGibbous %>
-            </td>
-            <td>
-              <%= journalPrompts.fullMoon %>
-            </td>
-            <td>
-              <%= journalPrompts.waningGibbous %>
-            </td>
-            <td>
-              <%= journalPrompts.thirdQuarter %>
-            </td>
-
-
-          </tr>
-          </tbody>
-        </table>
+        </td>
+      </tr>
+  </section>
+  <tr>
+    <td>
+      <%= journalPrompts.newMoon %>
+    </td>
+    <td>
+      <%= journalPrompts.waxingCrescent %>
+    </td>
+    <td>
+      <%= journalPrompts.firstQuarter %>
+    </td>
+    <td>
+      <%= journalPrompts.waxingGibbous %>
+    </td>
+    <td>
+      <%= journalPrompts.fullMoon %>
+    </td>
+    <td>
+      <%= journalPrompts.waningGibbous %>
+    </td>
+    <td>
+      <%= journalPrompts.thirdQuarter %>
+    </td>
 
 
-
-
+  </tr>
+  </tbody>
+  </table>
 
 
 
 
-        <%- include('../partials/footer') %>
+
+
+
+
+  <%- include('../partials/footer') %>
