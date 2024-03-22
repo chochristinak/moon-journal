@@ -56,7 +56,7 @@ _Specific Goal with Journal & Moon Themes UI_<br>
   ![MongoDB](https://img.shields.io/badge/-MongoDB-05122A?style=flat&logo=mongodb)
   ![Express](https://img.shields.io/badge/-Express-05122A?style=flat&logo=express)
   ![Mongoose ODM](https://img.shields.io/badge/-Mongoose_ODM-05122A?style=flat&logo=mongodb)
-  ![Markdown](https://img.shields.io/badge/-Markdown-05122A?style=flat&logo=markdown)
+
   
   
   
