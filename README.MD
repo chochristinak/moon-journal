@@ -7,11 +7,16 @@
 (https://github.com/chochristinak/moon-journal.git)
   
   <h1>MOON JOURNAL</h1>
-  Moon Journal is an app for *setting goals* and *journaling* in alignment with Moon energies. Users can find out what the current moon phase is, and recommended jouranling ideas. 
+  _"The sun sees our bodies. The moon sees our souls."_
+  The Moon signifies wisdom, intution, transformation, and spiritual connection. Literally speaking, the moon sees us through the darkest hours of the night, illuminating the sky. And much like the moon, as people, we go through phases.
   
-  The app is designed to help the user track proress and growth by editing their goals and setting a finite date to achieve by.
+   By tapping into the spiritual energy of the moon, we can use the special opportunities that each moon phase presents to stay connected - to the natural rythm of the universe and to our innermost feelings and desires. Understanding and harvesting moon energies can also help us maximize productivity and create an enriched work cycle.
+
+  Moon Journal is an app for **setting goals** and **journaling**, in alignment with _Moon energies_. The app provides jouranling themes based on the current moon phase. 
   
-  When setting goals, the user is encouraged to define specific goals by breaking them down into actionable steps and ideas for productivity. Additionally, a user can write journal entries to track progress about their goals and get in touch with their inner state. The app gives you themes to focus on for the current moon phase before you start journaling. 
+  The app is also designed to help the user track proress and growth by editing their goals and setting a finite date to achieve by.
+  
+  When setting goals, the user is encouraged to define specific goals by breaking them down into actionable steps and ideas for productivity. Additionally, a user can create and edit journal entries reflect and track the progress of their goals.
 
   _All Goals UI_ <br>
   ![Screenshot](https://totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-21-at-3.59.20e280afpm.png?resize=219%2C219)
