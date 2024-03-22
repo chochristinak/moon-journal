@@ -70,6 +70,7 @@ _Specific Goal with Journal & Moon Themes UI_<br>
   7. Stack Overfow
   8. Mongoose JS Docs Guide
   9. YouTube
+  10. (https://github.com/jasonsturges/lunarphase-js)
 
   
   [Click to View Project Planning!]
