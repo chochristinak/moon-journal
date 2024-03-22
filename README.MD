@@ -7,7 +7,7 @@
 (https://github.com/chochristinak/moon-journal.git)
   
   <h1>MOON JOURNAL</h1>
- " _The sun sees our bodies. The moon sees our souls._"
+ "The sun sees our _bodies_. The moon sees our _souls_."
 <br><br>
   The Moon signifies wisdom, intution, transformation, and spiritual connection. Literally speaking, the moon sees us through the darkest hours of the night, illuminating the sky. And much like the moon, as people, we go through phases.
   
