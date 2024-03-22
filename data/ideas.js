@@ -1,5 +1,3 @@
-const Moon = require('lunarphase-js')
-
 const ideas = {
     NEW: ['New Intentions', 'Rest', 'Reflect', 'Fresh Start', 'Plan'],
     'WAXING CRESCENT': ['Hustle', 'Manifest', 'Action'],

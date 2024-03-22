@@ -2,10 +2,11 @@
 <div id="header" align="center">
     <img src="https://i0.wp.com/totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-20-at-11.04.03e280afam.png?ssl=1">
   </div>
-  (https://github.com/chochristinak/moon-journal.git)
+ (https://moon-journal-783b5e0d9f7f.herokuapp.com/)
+ (https://github.com/chochristinak/moon-journal.git)
   
   <h1>MOON JOURNAL</h1>
-  Moon Journal is an app for *setting goals* and *journaling* in alignment with Moon energies. Users can find out what the current moon phase is, and recommended jouranling ideas. 
+  Moon Journal is an app for **setting goals** and **journaling** in alignment with _Moon energies_. Users can find out what the current moon phase is, and recommended jouranling ideas. 
   
   The app is designed to help the user track proress and growth by editing their goals and setting a finite date to achieve by.
   
