@@ -7,7 +7,8 @@
 (https://github.com/chochristinak/moon-journal.git)
   
   <h1>MOON JOURNAL</h1>
-  _"The sun sees our bodies. The moon sees our souls."_
+ " _The sun sees our bodies. The moon sees our souls._"
+<br><br>
   The Moon signifies wisdom, intution, transformation, and spiritual connection. Literally speaking, the moon sees us through the darkest hours of the night, illuminating the sky. And much like the moon, as people, we go through phases.
   
    By tapping into the spiritual energy of the moon, we can use the special opportunities that each moon phase presents to stay connected - to the natural rythm of the universe and to our innermost feelings and desires. Understanding and harvesting moon energies can also help us maximize productivity and create an enriched work cycle.
