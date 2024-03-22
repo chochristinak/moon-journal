@@ -2,7 +2,8 @@
 <div id="header" align="center">
     <img src="https://i0.wp.com/totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-20-at-11.04.03e280afam.png?ssl=1">
   </div>
-  ![Heroku](https://img.shields.io/badge/-Heroku-05122A?style=flat&logo=heroku)(https://moon-journal-783b5e0d9f7f.herokuapp.com/)
+  ![Heroku](https://img.shields.io/badge/-Heroku-05122A?style=flat&logo=heroku)
+(https://moon-journal-783b5e0d9f7f.herokuapp.com/)
   ![Github](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github)(https://github.com/chochristinak/moon-journal.git)
   
   <h1>MOON JOURNAL</h1>
