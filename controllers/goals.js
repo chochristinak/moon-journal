@@ -12,7 +12,7 @@ module.exports = {
   edit: editGoal,
   update: updateGoal,
   delete: deleteGoal,
-  markDone,
+  markDone: markDone
 };
 
 async function markDone(req, res) {

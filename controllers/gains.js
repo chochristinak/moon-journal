@@ -13,4 +13,4 @@ async function showGains(req, res) {
       console.error('Error retrieving done goals:', error);
       res.sendStatus(500);
     }
-  }
+}
