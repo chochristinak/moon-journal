@@ -5,6 +5,7 @@
       <th>Goal</th>
       <th>Date Created</th>
       <th>Date Accomplished</th>
+      <th>Actions</th>
     </tr>
   </thead>
   <tbody>
@@ -14,7 +15,17 @@
       <td><%= doneGoal.goal %></td>
       <td><%= doneGoal.createdAt.toString().slice(0, 16) %></td>
       <td><%= doneGoal.updatedAt.toString().slice(0, 16) %></td>
-      <td><a href="/goals/<%= doneGoal._id %>">RE-VISIT</a></td>
+      <td>
+        <a href="/goals/<%= doneGoal._id %>">RE-VISIT</a>
+        <form
+          id="delete-done-goal-form"
+          name="doneGoalId"
+          action="/gains/done/<%= doneGoal._id %>?_method=DELETE"
+          method="POST"
+        >
+          <button type="submit">DELETE</button>
+        </form>
+      </td>
     </tr>
     <% } %> <% }); %>
   </tbody>

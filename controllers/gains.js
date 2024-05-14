@@ -18,3 +18,17 @@ async function showGains(req, res) {
     res.sendStatus(500);
   }
 }
+
+async function deleteDoneGoal(req, res) {
+    try {
+      const doneGoalId = req.params.id; 
+      const doneGoal = await Goal.findByIdAndDelete(doneGoalId); 
+      if (!doneGoal) {
+        return res.sendStatus(404); 
+      }
+      res.redirect('/gains'); 
+    } catch (err) {
+      console.error(err);
+      res.sendStatus(500); 
+    }
+  }

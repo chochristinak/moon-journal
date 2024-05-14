@@ -5,6 +5,7 @@ const gainsCtrl = require('../controllers/gains');
 
 
 router.get('/', gainsCtrl.show);
+router.delete('/done/:id', gainsCtrl.deleteDoneGoal);
 
 
 module.exports = router
