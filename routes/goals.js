@@ -1,36 +1,27 @@
-var express = require('express');
+var express = require("express");
 var router = express.Router();
-const goalsCtrl = require('../controllers/goals')
-const ensureLoggedIn = require('../config/ensureLoggedIn');
+const goalsCtrl = require("../controllers/goals");
+const ensureLoggedIn = require("../config/ensureLoggedIn");
 
 // All paths already include /goals
 
-
-
 // GET /goals
-router.get('/', ensureLoggedIn, goalsCtrl.index);
+router.get("/", ensureLoggedIn, goalsCtrl.index);
 // GET /goals/new
-router.get('/new', ensureLoggedIn, goalsCtrl.new);
+router.get("/new", ensureLoggedIn, goalsCtrl.new);
 // GET /goals/:id (show functionality) MUST be below new route
-router.get('/:id', ensureLoggedIn, goalsCtrl.show);
+router.get("/:id", ensureLoggedIn, goalsCtrl.show);
 // POST /goals
-router.post('/', ensureLoggedIn, goalsCtrl.create);
+router.post("/", ensureLoggedIn, goalsCtrl.create);
 
-router.get('/:id/edit', ensureLoggedIn, goalsCtrl.edit)
+router.get("/:id/edit", ensureLoggedIn, goalsCtrl.edit);
 
-router.put('/:id', ensureLoggedIn, goalsCtrl.update)
+router.put("/:id", ensureLoggedIn, goalsCtrl.update);
 
-
-
-router.delete('/:id', ensureLoggedIn, goalsCtrl.delete);
+router.delete("/:id", ensureLoggedIn, goalsCtrl.delete);
 
 // move to done
 
-router.post('/:id/done', ensureLoggedIn, goalsCtrl.markDone);
+router.post("/:id/done", ensureLoggedIn, goalsCtrl.markDone);
 
-
-
-
-
-	
 module.exports = router;

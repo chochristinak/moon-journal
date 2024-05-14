@@ -23,7 +23,7 @@ async function markDone(req, res) {
     }
     if (!goal.accomplished) {
       goal.accomplished = true;
-      goal.doneList.push(goal._id); 
+      goal.doneList.push(goal._id);
       await goal.save();
     }
     res.redirect("/gains"); 
