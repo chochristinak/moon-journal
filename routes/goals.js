@@ -20,7 +20,6 @@ router.put("/:id", ensureLoggedIn, goalsCtrl.update);
 
 router.delete("/:id", ensureLoggedIn, goalsCtrl.delete);
 
-// move to done
 
 router.post("/:id/done", ensureLoggedIn, goalsCtrl.markDone);
 

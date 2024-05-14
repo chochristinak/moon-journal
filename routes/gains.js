@@ -1,11 +1,12 @@
 const express = require('express');
 const router = express.Router();
 const gainsCtrl = require('../controllers/gains');
+const ensureLoggedIn = require("../config/ensureLoggedIn");
 
 
 
-router.get('/', gainsCtrl.show);
-router.delete('/done/:id', gainsCtrl.deleteDoneGoal);
+router.get('/', ensureLoggedIn, gainsCtrl.show);
+router.delete('/done/:id', ensureLoggedIn, gainsCtrl.deleteDoneGoal);
 
 
 module.exports = router

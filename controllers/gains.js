@@ -2,6 +2,7 @@ const Goal = require("../models/goal");
 
 module.exports = {
   show: showGains,
+  deleteDoneGoal
 };
 
 async function showGains(req, res) {
