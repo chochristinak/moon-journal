@@ -90,8 +90,6 @@
   ## :satellite: **Upcoming Features**
   - :ghost: Mobile-friendly app
   - :ghost: Notifications for Upcoming Moon Phase
-  - :ghost: Style updates
-  - :ghost: A "Win" List for the User to track their accomplishments
   - :ghost: A moon calender so users can reference past, current, and upcoming moon phases
   - :ghost: A counter for pending goals vs. accomplished goals and 
 
