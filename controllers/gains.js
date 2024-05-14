@@ -1,8 +1,9 @@
-const Goal = require("../models/goal");
+const Goal = require('../models/goal');
 
-module.exports = {
-  show: showGains,
-};
+
+module. exports = {
+    show: showGains
+}
 
 async function showGains(req, res) {
     try {
