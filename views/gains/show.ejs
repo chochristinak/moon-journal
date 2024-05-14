@@ -3,7 +3,6 @@
   <thead>
     <tr>
       <th>Goal</th>
-      <th>Date Created</th>
       <th>Date Accomplished</th>
       <th>Actions</th>
     </tr>
@@ -13,7 +12,6 @@
     %>
     <tr>
       <td><%= doneGoal.goal %></td>
-      <td><%= doneGoal.createdAt.toString().slice(0, 16) %></td>
       <td><%= doneGoal.updatedAt.toString().slice(0, 16) %></td>
       <td>
         <a href="/goals/<%= doneGoal._id %>">RE-VISIT</a>
