@@ -1,28 +1,29 @@
 <%- include('../partials/header') %>
-<img id="goals-show-img"
-    src="https://totemsurftribe.files.wordpress.com/2024/03/e28094pngtreee28094moon-phase-geometric-black-figure_6491358-1-2182384788-e1710848276753.png">
-    <section id ="new-goal-page">
-  <h3>today's date: <%= date %>
-  </h3>
+<img
+  id="goals-show-img"
+  src="https://totemsurftribe.files.wordpress.com/2024/03/e28094pngtreee28094moon-phase-geometric-black-figure_6491358-1-2182384788-e1710848276753.png"
+/>
+<section id="new-goal-page">
+  <h3>today's date: <%= date %></h3>
 
-  <h2>MOON PHASE<br>
-    <%=phase%>
-      <%=phaseEmoji%>
+  <h2>
+    MOON PHASE<br />
+    <%=phase%> <%=phaseEmoji%>
   </h2>
   <a href="/journalPrompts">How to Work with this Moon Cycle</a>
 
-  <br>
+  <br />
 
   <!-- <img src="https://totemsurftribe.files.wordpress.com/2024/03/1mjphrdciuosnyrxbt5mtig.webp?resize=438%2C438" aria-flowto="div"> -->
 
   <form id="new-goal-form" action="/goals" method="POST">
-   <br>
+    <br />
     <label>Set a Goal:</label>
-    <input type="text" name="goal"><br>
+    <input type="text" name="goal" /><br />
     <label>Define Action Items:</label>
-    <input type="text" name="actionItems"><br>
+    <input type="text" name="actionItems" /><br />
     <label>Set an Intention:</label>
-    <input type="text" name="setIntentions"><br>
+    <input type="text" name="setIntentions" /><br />
     <label>Productivity Ideas:</label>
     <select name="productivityIdeas">
       <option value="energy">Manage Energy Wisely</option>
@@ -30,22 +31,20 @@
       <option value="refine">Refine Your Space</option>
       <option value="prioritize">Prioritze Your Health</option>
       <option value="declutter">Stay Organized</option>
-      <option value="break">Take Breaks</option><br>
-    </select><br>
+      <option value="break">Take Breaks</option>
+      <br /></select
+    ><br />
     <label>Additional Detail:</label>
-    <input type="text" name="additionalDetail"><br>
-    <label>Accomplish by:
-      <input type="datetime-local" name="finishby" value="<%= finishDate %>">
-      <br>
-    </label><br>
-    <br>
+    <input type="text" name="additionalDetail" /><br />
+    <label
+      >Accomplish by:
+      <input type="datetime-local" name="finishby" value="<%= finishDate %>" />
+      <br /> </label
+    ><br />
+    <br />
 
-
-
-    <input type="submit" value="Add Goal">
-
-
+    <input type="submit" value="Add Goal" />
   </form>
 </section>
 
-  <%- include('../partials/footer') %>
+<%- include('../partials/footer') %>

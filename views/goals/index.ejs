@@ -34,11 +34,12 @@
                   <button type="submit">DONE</button>
                 </form>
               </td>
+              <td>
                 <form id="delete-goal" action="/goals/<%= goal._id %>?_method=DELETE" method="POST">
                   <button type="submit">DELETE</button>
                 </form>
               </td>
-              </td>
+            
               <% } %>
             </tr>
 

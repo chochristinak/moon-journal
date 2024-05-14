@@ -1,6 +1,7 @@
 #show-page,
 #edit-goal-page,
 #new-goal-page,
+#journalprompts-show-page,
 #index-page
  {
   /* From https://css.glass */
@@ -313,7 +314,9 @@ table td {
   -webkit-backdrop-filter: blur(20px);
   border: 1px dotted rgba(245, 242, 242, 0.906);
 }
+
 #list a {
+  color:#767070;
   border-radius: 4px;
   background-color: #d2bdee;
   padding: 4px;
@@ -330,7 +333,8 @@ table td {
   background-color: #f4cae4;
 }
 
-#delete-goal [type=submit] {
+#delete-goal,
+#delete-done-goal-form [type=submit] {
   font-family: "Noto Sans Display";
   background-color: #62616186;
   padding: 4px;
@@ -339,41 +343,27 @@ table td {
   border: #f4f4f8 .4px dotted;
 }
 
-#delete-goal [type=submit]:hover {
+#delete-goal,
+#delete-done-goal-form [type=submit]:hover {
   background-color: #b5dde4;
 }
 
-#list a.done-button {
-  border-radius: 4px;
-  background-color: #d2bdee; 
+#mark-done [type=submit] {
+  font-family: "Noto Sans Display";
+  color:rgb(51, 52, 52);
+  background-color: #f9e96ee2;
   padding: 4px;
-  text-decoration: none;
   font-size: 18px;
-  border: .5px dotted #c4c2c2;
-  box-shadow: 0 4px 30px rgb(196, 193, 193);
+  border-radius: 4px;
+  border: #f4f4f8 .4px dotted;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px dotted rgba(245, 242, 242, 0.906);
 }
 
-#list a.done-button:hover {
-  background-color: #f4cae4; 
-}
-
-#delete-goal [type=submit]{
-  font-family:  "Noto Sans Display";
-  background-color: #62616186;
-  padding: 4px;
-  font-size: 18px;
-  border-radius: 4px;
-  border:#f4f4f8 .4px dotted;
-}
-#delete-goal [type=submit]:hover{
-  background-color: #b5dde4;
-}
-
-#list a:hover{
-  background-color: #f4cae4;
+#mark-done [type=submit]:hover {
+  background-color: #fdf73b;
+  color:#424748
 }
 
 
@@ -444,6 +434,3 @@ span.badge {
   height: 34px;
 }
 
-/* .edit-goal-page {
-  background-image: url(https://totemsurftribe.files.wordpress.com/2024/03/360_f_345169850_blsuxwypbn8f8mujbcg5qvzcrxssclb4.jpg?resize=438%2C438);
-} */
