@@ -1,16 +1,20 @@
-const Goal = require('../models/goal');
+const Goal = require("../models/goal");
 
-
-module. exports = {
-    show: showGains
-}
+module.exports = {
+  show: showGains,
+};
 
 async function showGains(req, res) {
-    try {
-      const doneGoals = await Goal.find({ 'accomplished': true }).populate('doneList');
-      res.render('gains/show', { title: 'Celebrate Your Achievements', doneGoals });
-    } catch (error) {
-      console.error('Error retrieving done goals:', error);
-      res.sendStatus(500);
-    }
+  try {
+    const doneGoals = await Goal.find({ accomplished: true }).populate(
+      "doneList"
+    );
+    res.render("gains/show", {
+      title: "Celebrate Your Achievements",
+      doneGoals,
+    });
+  } catch (error) {
+    console.error("Error retrieving done goals:", error);
+    res.sendStatus(500);
+  }
 }

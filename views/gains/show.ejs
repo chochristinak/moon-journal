@@ -1,26 +1,22 @@
-<%- include('../partials/header') %>
-<%= title %>
+<%- include('../partials/header') %> <%= title %>
 <table id="done-list">
   <thead>
     <tr>
       <th>Goal</th>
       <th>Date Created</th>
       <th>Date Accomplished</th>
-    
     </tr>
   </thead>
   <tbody>
-    <% doneGoals.forEach(function(doneGoal) { %> 
-      <% if (doneGoal.accomplished) { %> 
-        <tr>
-          <td><%= doneGoal.goal %></td>
-          <td><%= doneGoal.createdAt.toString().slice(0, 16) %></td> 
-          <td><%= doneGoal.updatedAt.toString().slice(0, 16) %></td> 
-          <td><a href="/goals/<%= doneGoal._id %>">RE-VISIT</a></td> 
-        
-        </tr>
-      <% } %>
-    <% }); %>
+    <% doneGoals.forEach(function(doneGoal) { %> <% if (doneGoal.accomplished) {
+    %>
+    <tr>
+      <td><%= doneGoal.goal %></td>
+      <td><%= doneGoal.createdAt.toString().slice(0, 16) %></td>
+      <td><%= doneGoal.updatedAt.toString().slice(0, 16) %></td>
+      <td><a href="/goals/<%= doneGoal._id %>">RE-VISIT</a></td>
+    </tr>
+    <% } %> <% }); %>
   </tbody>
 </table>
 

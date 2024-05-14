@@ -12,7 +12,7 @@ module.exports = {
   edit: editGoal,
   update: updateGoal,
   delete: deleteGoal,
-  markDone: markDone
+  markDone,
 };
 
 async function markDone(req, res) {
@@ -23,10 +23,11 @@ async function markDone(req, res) {
     }
     if (!goal.accomplished) {
       goal.accomplished = true;
-      goal.doneList.push(goal._id);
+      // Push the goal's ID to the doneList array in the goal schema
+      goal.doneList.push(goal._id); // Pushing the goal's ID
       await goal.save();
     }
-    res.redirect("/gains"); 
+    res.redirect("/gains"); // Redirect to the gains page after marking as done
   } catch (err) {
     console.error(err);
     res.status(500).send("Internal Server Error");
