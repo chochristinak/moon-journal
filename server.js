@@ -18,7 +18,7 @@ const indexRouter = require('./routes/index');
 const goalsRouter = require('./routes/goals');
 const journalsRouter = require('./routes/journals');
 const journalPromptsRouter = require('./routes/journalPrompts');
-const { show } = require('./controllers/goals');
+const gainsRouter = require('./routes/gains');
 
 
 var app = express();

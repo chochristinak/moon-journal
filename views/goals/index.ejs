@@ -28,8 +28,10 @@
               </td>
               <td><a href="/goals/<%= goal._id %>">JOURNAL</a></td>
               <td><a href="/goals/<%= goal._id %>/edit">EDIT</a></td>
-              <td><a href="/gains">DONE</a></td>
               <td>
+                <a href="/goals/<%= goal._id %>/done" class="done-button">DONE</a>
+              </td>
+              
                 <form id="delete-goal" action="/goals/<%= goal._id %>?_method=DELETE" method="POST">
                   <button type="submit">DELETE</button>
                 </form>

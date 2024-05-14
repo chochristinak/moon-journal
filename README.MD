@@ -24,27 +24,27 @@
   <h3 align="center">Homepage</h3>
   <img
   src="https://totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-21-at-2.51.17e280afpm.png?resize=438%2C438"
-  width="700"
+  width="400"
   />
   <h3 align="center">Goals List</h3>
   <img
   src="https://totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-21-at-3.59.20e280afpm.png?resize=219%2C219"
-  width="700"
+  width="400"
   /> 
   <h3 align="center">Journal Prompts</h3>
   <img
   src="https://totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-21-at-2.53.05e280afpm.png?resize=438%2C438"
-  width="700"
+  width="400"
   />
   <h3 align="center">Add Goals</h3>
   <img
   src="https://totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-21-at-2.54.39e280afpm.png?resize=438%2C438"
-  width="700"
+  width="400"
   />
   <h3 align="center">Moon Journal</h3>
   <img
   src="https://totemsurftribe.files.wordpress.com/2024/03/screenshot-2024-03-21-at-2.55.09e280afpm.png?resize=438%2C438"
-  width="700"
+  width="400"
   />
   
 

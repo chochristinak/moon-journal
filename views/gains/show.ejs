@@ -1,42 +1,27 @@
 <%- include('../partials/header') %>
 <%= title %>
-<h1>Celebrate Your Achievements</h1>
 <table id="done-list">
-    <thead>
-      <tr>
-        <th>Goal</th>
-        <th>Date Created</th>
-        <th>Date Accomplished</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% goals.forEach(function(goal) { %>
-      
+  <thead>
+    <tr>
+      <th>Goal</th>
+      <th>Date Created</th>
+      <th>Date Accomplished</th>
+    
+    </tr>
+  </thead>
+  <tbody>
+    <% doneGoals.forEach(function(doneGoal) { %> 
+      <% if (doneGoal.accomplished) { %> 
         <tr>
-         <td> <%= goal.goal %></td>
-          <td><%= goal.createdAt.toString().slice(0, 16) %></td>
-           <td> <%= goal.updatedAt.toString().slice(0, 16) %>
-          </td>
-          <td><a href="/goals/<%= goal._id %>">RE-VISIT</a></td>
-
-
-          <td><form id="delete-goal" action="/goals/<%= goal._id %>?_method=DELETE" method="POST"> 
-          <button type="submit">DELETE</button>
-          </form></td>
-
-          </td>
-  
-       </tr>
-
-        <% }); %>
-    </tbody>
-  </table>
-
-
-
-
-
-
-
+          <td><%= doneGoal.goal %></td>
+          <td><%= doneGoal.createdAt.toString().slice(0, 16) %></td> 
+          <td><%= doneGoal.updatedAt.toString().slice(0, 16) %></td> 
+          <td><a href="/goals/<%= doneGoal._id %>">RE-VISIT</a></td> 
+        
+        </tr>
+      <% } %>
+    <% }); %>
+  </tbody>
+</table>
 
 <%- include('../partials/footer') %>
