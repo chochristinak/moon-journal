@@ -29,9 +29,11 @@
               <td><a href="/goals/<%= goal._id %>">JOURNAL</a></td>
               <td><a href="/goals/<%= goal._id %>/edit">EDIT</a></td>
               <td>
-                <a href="/goals/<%= goal._id %>/done" class="done-button">DONE</a>
+                <form id="mark-done-form" action="/goals/<%= goal._id %>/done" method="POST">
+                  <input type="hidden" name="goalId" value="<%= goal._id %>"> <!-- Add a hidden input to pass the goal ID -->
+                  <button type="submit">DONE</button>
+                </form>
               </td>
-              
                 <form id="delete-goal" action="/goals/<%= goal._id %>?_method=DELETE" method="POST">
                   <button type="submit">DELETE</button>
                 </form>
