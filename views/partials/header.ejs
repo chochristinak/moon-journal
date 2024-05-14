@@ -20,15 +20,18 @@
 
 <body>
   <nav>
-   <img src="https://see.fontimg.com/api/renderfont4/RXOM/eyJyIjoiZnMiLCJoIjozNSwidyI6MTAwMCwiZnMiOjM1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/TW9vbiBKb3VybmFsIA/monoton.png">
-     <a href="/journalprompts">INFO</a>
-      <% if (user) { %> 
+    <img src="https://see.fontimg.com/api/renderfont4/RXOM/eyJyIjoiZnMiLCJoIjozNSwidyI6MTAwMCwiZnMiOjM1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/TW9vbiBKb3VybmFsIA/monoton.png">
+    <a href="/journalprompts">INFO</a>
+    <% if (user) { %> 
       <!-- <a href="/gains" <%- title==='Success' ? 'class="active"' : '' %>>GAINS</a>  -->
       <a href="/goals" <%- title==='All Goals' ? 'class="active"' : '' %>>MY GOALS</a>
       <a href="/goals/new" <%- title==='Add Goal' ? 'class="active"' : '' %>>ADD GOAL</a>
       <a href="/logout">LOG OUT</a>
-      <% } else { %>
-        <a href="/auth/google" class="login">LOG IN&nbsp;</a>
-        <% } %>
+      <% if (user) { %>
+        <a href="/gains" <%- title==='Gains' ? 'class="active"' : '' %>>GAINS</a>
+      <% } %>
+    <% } else { %>
+      <a href="/auth/google" class="login">LOG IN&nbsp;</a>
+    <% } %>
   </nav>
   <main>
